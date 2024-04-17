@@ -6,3 +6,4 @@ with sync_playwright() as p:
     page.goto("https://playwright.dev/")
     page.screenshot(path="example.png")
     browser.close()
+
