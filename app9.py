@@ -36,7 +36,7 @@ def tryURL(content,murl):
       element_with_aria_label = page.locator('article')
 
       # 获取aria-label属性的值
-      try:
+      if 1==1:
         if "· 2024年" in element_with_aria_label.inner_text():
           aria_label_value = "2024年" + element_with_aria_label.inner_text().split("· 2024年")[1].replace("\n"," ")
         if "· 2023年" in element_with_aria_label.inner_text():
@@ -48,7 +48,7 @@ def tryURL(content,murl):
         print(aria_label_value)
         write_to_file("answerwithpaper.txt", aria_label_value + " --- " + content)
         
-      except:
+      else:
         print("ERROR")
       # page.screenshot(path="example.png")
       browser.close()
@@ -71,7 +71,7 @@ with open('paper.txt', 'r') as file:
     for line in file:
         print("======")
         print(line.strip().split(" ---- ")[1])
-        try:
+        if 1==1:
             tryURL(line.strip().split(" ---- ")[1],line.strip().split(" ---- ")[0])
-        except:
+        else:
             print("ERROR")
