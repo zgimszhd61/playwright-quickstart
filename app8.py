@@ -1,7 +1,3 @@
-
-
-
-
 from playwright.sync_api import sync_playwright
 
 def tryURL(murl):
@@ -34,5 +30,6 @@ with open('paper.txt', 'r') as file:
         print(line.strip().split(" ---- ")[0])
         try:
             tryURL(line.strip().split(" ---- ")[1])
+            # print(line.strip().split(" ---- ")[1])
         except:
             print("ERROR")
