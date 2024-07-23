@@ -1,0 +1,4 @@
+perplexity.ai == 236.2M == -5.96%
+scite.ai == 4.076M == -10.12%
+shadcn.com == 9.625M == 1.51%
+moonshot.cn == 65.15M == 0.79%
