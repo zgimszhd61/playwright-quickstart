@@ -2,3 +2,10 @@ perplexity.ai == 236.2M == -5.96%
 scite.ai == 4.076M == -10.12%
 shadcn.com == 9.625M == 1.51%
 moonshot.cn == 65.15M == 0.79%
+you.com == 32.37M == -16.16%
+cloudinary.com == 27.50M == -4.78%
+gptstore.ai == 681,011 == 19.73%
+vercel.com == 19.05M == -0.22%
+supabase.com == 11.82M == 1.41%
+typeform.com == 114.5M == -7.29%
+figma.com == 261.8M == -2.74%

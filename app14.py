@@ -31,7 +31,9 @@ def fetch_website_data(page, keyword):
     url = f"https://pro.similarweb.com/#/digitalsuite/websiteanalysis/overview/website-performance/*/999/3m?webSource=Total&key={keyword}"
     xpath = '//*[@id="react-app"]/div/div[4]/div[2]/div[2]/span/div/div/span/div[3]/div[2]/section/div/section/div[2]/div/div[1]/div[3]/div[1]/div[3]'
     xpath_rate = '//*[@id="react-app"]/div/div[4]/div[2]/div[2]/span/div/div/span/div[3]/div[2]/section/div/section/div[2]/div/div[1]/div[3]/div[1]/div[4]/div[1]/div/span[2]'
-
+    if content_exists_in_file(keyword):
+        print("===={} has exists , so ignore.".format(keyword))
+        return
     try:
         page.set_extra_http_headers(headers)
         page.goto(url)
@@ -44,11 +46,7 @@ def fetch_website_data(page, keyword):
         logging.error(f"ERROR for {keyword}: {e}")
 
 def write_to_file(content,keyword):
-    if content_exists_in_file(keyword):
-        print("===={} has exists , so ignore.".format(keyword))
-        return
-    else:
-        with open('SimillarwebContent.txt', 'a+', encoding='utf-8') as file:
+    with open('SimillarwebContent.txt', 'a+', encoding='utf-8') as file:
             file.write(content + "\n")
 
 ## 判断是否存在，如果存在就不用重复记录了.
@@ -74,7 +72,13 @@ if __name__ == "__main__":
         "perplexity.ai", 
         "scite.ai",
         "shadcn.com",
-        "moonshot.cn" 
+        "moonshot.cn",
+        "you.com",
+        "cloudinary.com",
+        "gptstore.ai",
+        "vercel.com",
+        "supabase.com",
+        "typeform.com",
         
         ]
     main(keywords)

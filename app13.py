@@ -55,5 +55,10 @@ def main(keyword):
 # main("ai write")
 # main("video")
 
-main("learning")
-main("conpanion")
+# main("learning")
+# main("conpanion")
+# main("task")
+
+main("travel")
+main("girl friend")
+main("knowledge")
