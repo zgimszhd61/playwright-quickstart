@@ -59,6 +59,10 @@ def main(keyword):
 # main("conpanion")
 # main("task")
 
-main("travel")
-main("girl friend")
-main("knowledge")
+# main("travel")
+# main("girl friend")
+# main("knowledge")
+
+main("tool")
+main("game")
+main("hang zhou")
