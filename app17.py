@@ -11,7 +11,7 @@ def extract_content(url, selector):
         browser = p.chromium.launch(headless=True, args=["--no-sandbox"])
         page = browser.new_page()
         page.goto(url)
-        time.sleep(2)
+        # time.sleep(2)
         content = page.locator(selector).all_text_contents()
         browser.close()
         return content
@@ -110,8 +110,10 @@ def askAndSearch(domain):
 
 
 # askAndSearch("声音克隆")
+
 # askAndSearch("电影")
 # askAndSearch("综艺")
+
 # askAndSearch("笔记")
 # askAndSearch("电子商务")
 # askAndSearch("推荐")
@@ -227,4 +229,4 @@ def askAndSearch(domain):
 # 以ai为种子搜索词.
 # 以shadcn为种子搜索词.
 
-main("news site:ai")
+# main("news site:ai")
