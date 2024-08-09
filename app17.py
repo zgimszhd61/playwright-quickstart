@@ -114,7 +114,7 @@ def askAndSearch(domain):
 # askAndSearch("电影")
 # askAndSearch("综艺")
 
-# askAndSearch("笔记")
+askAndSearch("笔记")
 # askAndSearch("电子商务")
 # askAndSearch("推荐")
 # askAndSearch("素材")
