@@ -7,14 +7,17 @@ def extract_links(page,key):
     elements_langs = page.locator('xpath=//div/div/div[1]/div/div/div[2]/div[2]/div/div[1]/div[4]/div/div/div/div/div[1]/ul/li[1]/span').all()
 
 
-    try:
+    if 1==1:
         for i in range(0,len(elements)):
             url = "github.com/{}".format(elements[i].get_attribute('href'))
             starNum = elements_stars[i].inner_text().strip()
-            lang = elements_langs[i].inner_text().strip()
+            if i < len(elements_langs)  and elements_langs[i]:
+                lang = elements_langs[i].inner_text().strip()
+            else:
+                lang = "unknown"
             content = "{} , {} , {}".format(url , starNum , lang)
             write_to_file(content,key)
-    except:
+    else:
         print("ERROR:{}".format(url))
 
 
@@ -60,8 +63,30 @@ def SearchKeywordFromGithub(key):
 # SearchKeywordFromGithub("swiftui")
 # SearchKeywordFromGithub("agent")
 # SearchKeywordFromGithub("shadcn")
-SearchKeywordFromGithub("next")
-SearchKeywordFromGithub("nuxt")
-SearchKeywordFromGithub("image")
-SearchKeywordFromGithub("machine learning")
-SearchKeywordFromGithub("reinforcement learning")
+# SearchKeywordFromGithub("next")
+# SearchKeywordFromGithub("nuxt")
+# SearchKeywordFromGithub("image")
+# SearchKeywordFromGithub("machine learning")
+# SearchKeywordFromGithub("reinforcement learning")
+# SearchKeywordFromGithub("photo")
+# SearchKeywordFromGithub("movie")
+# SearchKeywordFromGithub("canva")
+# SearchKeywordFromGithub("story")
+# SearchKeywordFromGithub("storytelling")
+# SearchKeywordFromGithub("ai friend")
+# SearchKeywordFromGithub("dbscan")
+# SearchKeywordFromGithub("cloudflare")
+# SearchKeywordFromGithub("deepmind")
+# SearchKeywordFromGithub("screen")
+# SearchKeywordFromGithub("faceebok")
+# SearchKeywordFromGithub("alibaba")
+# SearchKeywordFromGithub("zhihu")
+# SearchKeywordFromGithub("spider")
+# SearchKeywordFromGithub("crawler")
+# SearchKeywordFromGithub("novel")
+# SearchKeywordFromGithub("hot")
+# SearchKeywordFromGithub("coffee")
+# SearchKeywordFromGithub("crm")
+# SearchKeywordFromGithub("erp")
+# SearchKeywordFromGithub("flight")
+SearchKeywordFromGithub("memory")
