@@ -35,7 +35,7 @@ def content_exists_in_file(content):
         return False
 
 def main(keyword):
-    print("checking {}".format(keyword))
+    # print("checking {}".format(keyword))
     # url1 = "https://www.google.com.hk/search?q={}+site%3Aai&newwindow=1&sca_esv=b2c38071ce043d54&hl=zh-CN&sxsrf=ADLYWIL1F1I7QXuoER7U_zVoH71YXGGNNg%3A1721745257334&ei=ab-fZriIFKXc2roP6q2x6QI&ved=0ahUKEwj44NPzsL2HAxUlrlYBHepWLC0Q4dUDCA8&uact=5&oq=assistant+site%3Aai&gs_lp=Egxnd3Mtd2l6LXNlcnAiEWFzc2lzdGFudCBzaXRlOmFpSMaNAVDkBFiPiwFwEHgBkAEBmAGQBKABwjGqAQwwLjI2LjMuMC4xLjK4AQPIAQD4AQGYAgWgAvEHwgIKEAAYsAMY1gQYR8ICBBAjGCfCAgoQIxiABBgnGIoFwgIFEAAYgATCAhAQLhiABBjRAxhDGMcBGIoFwgILEC4YgAQY0QMYxwHCAhAQLhiABBjRAxjHARgKGMsBwgIIEAAYgAQYywGYAwCIBgGQBgeSBwUxLjEuM6AH9kw&sclient=gws-wiz-serp".format(keyword)
     # url2 = "https://www.google.com.hk/search?q={}+site:ai&newwindow=1&sca_esv=b2c38071ce043d54&hl=zh-CN&sxsrf=ADLYWIKIfxRwR-0R65VKSOWFeHifa_QSbg:1721745278035&ei=fr-fZq3lAdGq0-kP46Xo4AY&start=10&sa=N&sstk=Aagrsuj3BXnZeqPtlSqpK-dL9VzXFJOIjMMMW5xIAJmis7A9debXehf1xG8jsacHljR85Fwjb4R9upOgpU_8uXK5VhvaOG5jZ86OmQ&ved=2ahUKEwitnMP9sL2HAxVR1TQHHeMSGmwQ8tMDegQIDBAE&biw=1057&bih=883&dpr=2".format(keyword)
     try:
@@ -114,11 +114,11 @@ def askAndSearch(domain):
 # askAndSearch("电影")
 # askAndSearch("综艺")
 
-askAndSearch("笔记")
+# askAndSearch("笔记")
 # askAndSearch("电子商务")
 # askAndSearch("推荐")
 # askAndSearch("素材")
-# askAndSearch("saas服务")
+# askAndSearch("saas")
 # askAndSearch("漏洞")
 # askAndSearch("喜欢")
 # askAndSearch("爱情")
@@ -126,9 +126,16 @@ askAndSearch("笔记")
 # askAndSearch("分享")
 # askAndSearch("扫描")
 # askAndSearch("总结")
-# askAndSearch("摘要")
+
+# askAndSearch("plan") ## Done
+
+# askAndSearch("openapi") ## Done
+
 # askAndSearch("邮件")
+
 # askAndSearch("新闻")
+# askAndSearch("约会")
+
 # askAndSearch("时间")
 # askAndSearch("硬件")
 # askAndSearch("眼镜")
@@ -138,7 +145,7 @@ askAndSearch("笔记")
 # askAndSearch("识别")
 # askAndSearch("检测")
 # askAndSearch("推广")
-# askAndSearch("约会")
+
 # askAndSearch("crm")
 # askAndSearch("erp")
 # askAndSearch("面试")
@@ -153,7 +160,9 @@ askAndSearch("笔记")
 # askAndSearch("财报")
 # askAndSearch("金融")
 # askAndSearch("商品推荐")
+
 # askAndSearch("新闻聚合")
+
 # askAndSearch("产品试用")
 # askAndSearch("杯子")
 # askAndSearch("留言")
@@ -229,4 +238,13 @@ askAndSearch("笔记")
 # 以ai为种子搜索词.
 # 以shadcn为种子搜索词.
 
-# main("news site:ai")
+# main("social site:ai")
+# main("fast site:ai")
+
+# main("weekend site:ai")
+
+# main("find site:ai")
+
+# main("acquire site:ai")
+
+main("acquire site:ai")
