@@ -247,4 +247,4 @@ def askAndSearch(domain):
 
 # main("acquire site:ai")
 
-main("acquire site:ai")
+main("open platform")

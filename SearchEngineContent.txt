@@ -5512,3 +5512,24 @@ https://apipie.ai , news roundup site:ai
 https://knowledge-base.boosted.ai , news roundup site:ai
 https://www.yeschat.ai , news roundup site:ai
 https://bika.ai , news roundup site:ai
+https://openfuture.io , open platform
+https://en.wikipedia.org , open platform
+https://ewandavis.net , open platform
+https://www.techtarget.com , open platform
+https://www.myob.com , open platform
+https://www.open-platform.dk , open platform
+https://platform.openai.com , open platform
+https://open-platform.theguardian.com , open platform
+https://top.co , open platform
+https://opea.dev , open platform
+https://www.totaljs.com , open platform
+https://open.shopee.com , open platform
+https://www.openplatform.am , open platform
+https://openplatform.comarch.com , open platform
+https://openservice.aliexpress.com , open platform
+https://research.ncl.ac.uk , open platform
+http://www.milestonesys.com , open platform
+https://open.lazada.com , open platform
+https://apperta.org , open platform
+https://formlabs.com , open platform
+https://topco.medium.com , open platform
